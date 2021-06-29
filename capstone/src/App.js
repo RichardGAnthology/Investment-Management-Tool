@@ -7,6 +7,7 @@ import addstock from "./components/addstock";
 // import updateInvestmentsComp from "./components/updateInvestmentsComp";
 // import AppleSauce from "./components/AppleSauce";
 import UpdateInvestment from "./components/updateInvestment";
+import ChangeInvestments from "./components/changeInvestments";
 
 function App() {
   return (
@@ -14,12 +15,12 @@ function App() {
       <Router>
         <Nav />
         <Switch>
-          <div id= "routes"> 
+         
           <Route path="/" exact component={Home} />
           <Route path="/home" component={Home} />
           <Route path="/listInvestments" component={ListInvestments} />
           <Route path="/addstock" component={addstock} />
-          </div>
+          
           {/* <Route
             path="updateInvestmentsComp/:id"
             component={updateInvestmentsComp}

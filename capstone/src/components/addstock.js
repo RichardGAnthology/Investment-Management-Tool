@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import InvestmentServices from "../services/InvestmentServices";
+import { TextField } from "@material-ui/core";
 
 export default class addstock extends Component {
   constructor(props) {
@@ -32,6 +33,8 @@ export default class addstock extends Component {
       stock: this.state.stock,
       number_purchased: this.state.number_purchased,
       purchase_date: this.state.purchase_date,
+      // .slice(0, 8) +
+      // (parseInt(this.state.purchase_date.split("-")[2]) + 1),
       account: this.state.account,
     };
     InvestmentServices.postInvestment(currentInvestment);
@@ -44,10 +47,12 @@ export default class addstock extends Component {
 
   handlePurchaseChange(event) {
     this.setState({ number_purchased: event.target.value });
+    // console.log(event.target.value);
   }
 
   handleDateChange(event) {
     this.setState({ purchase_date: event.target.value });
+    console.log(event.target.value);
   }
 
   handleAccountChange(event) {
@@ -57,39 +62,76 @@ export default class addstock extends Component {
   render() {
     return (
       <div>
+        {/* <TextField
+          variant ="filled"
+          placeholder="Stock to add"
+          label = "text"
+          value={this.state.stock}
+          onChange={this.handleStockChange}
+        /> */}
         <form>
-          <input
+          <TextField
+            type="text"
+            color="secondary"
+            variant="filled"
+            label="Stock to add"
+            value={this.state.stock}
+            onChange={this.handleStockChange}
+          />
+          {/* <input
             type="text"
             id="stock"
             name="stock"
             value={this.state.stock}
             placeholder="Stock to add"
             onChange={this.handleStockChange}
-          ></input>
-          <input
+          ></input> */}
+          <TextField
+            type="number"
+            variant="filled"
+            label="Amount"
+            value={this.state.number_purchased}
+            onChange={this.handlePurchaseChange}
+          />
+          {/* <input
             type="number"
             id="number_purchased"
             name="number_purchased"
             value={this.state.number_purchased}
             placeholder="amount"
             onChange={this.handlePurchaseChange}
-          ></input>
-          <input
+          ></input> */}
+          <TextField
+            type="date"
+            variant="filled"
+            label="purchase date"
+            // display = "none"
+            value={this.state.purchase_date}
+            onChange={this.handleDateChange}
+          />
+          {/* <input
             type="date"
             id="purchase_date"
             name="purchase_date"
             value={this.state.purchase_date}
             placeholder="date purchased"
             onChange={this.handleDateChange}
-          ></input>
-          <input
+          ></input> */}
+          <TextField
+            type="text"
+            variant="filled"
+            label="Account"
+            value={this.state.account}
+            onChange={this.handleAccountChange}
+          />
+          {/* <input
             type="text"
             id="account"
             name="account"
             value={this.state.account}
             placeholder="Account"
             onChange={this.handleAccountChange}
-          ></input>
+          ></input> */}
         </form>
         <p>Edit Investments</p>
         <button onClick={this.addstock}>Add to Investments</button>

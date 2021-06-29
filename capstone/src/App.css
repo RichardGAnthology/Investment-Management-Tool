@@ -1,3 +1,5 @@
+/* <a href='https://www.freepik.com/free-photos-vectors/business'>Business vector created by catalyststuff - www.freepik.com</a> */
+/* <a href="https://www.freepik.com/free-photos-vectors/logo">Logo vector created by catalyststuff - www.freepik.com</a> */
 .App {
   text-align: center;
 }
@@ -45,18 +47,125 @@
   display: flex;
   justify-content: space-around;
   align-content: space-around;
+}
+
+#searchButton {
+  background-color: rgb(107, 197, 107);
+  margin-left: 1%;
+}
+
+#tableContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#table {
+  width: 100vh;
+  padding: 1%;
+}
+
+#navBar {
+  background-color: #234990;
+  height: 10vh;
+  /* margin-bottom: 5%; */
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#tableTitle {
+  background-color: #3c83b6;
+  color: white;
+  padding: 1%;
+  /* border-radius: 25%; */
+}
+
+li {
+  color: white;
+}
+
+header {
+  background-color: #3c83b6;
+  color: white;
+  border-style: inset;
+}
+
+body {
+  background-color: #ffecdf;
+}
+
+#titleContainer {
+  /* border-style: solid; */
+  border-style: inset;
+  background-color: #3c83b6;
+  margin-bottom: 5%;
+}
+
+#footerContainer {
+  background-color: #234990;
+  color: white;
+  padding: 1%;
+  margin-top: 5%;
+}
+
+.Button {
+  margin: 90%;
+  padding: 90%;
+}
+
+#circle {
+  width: 400px;
+  height: 400px;
+  background: #3c83b6;
+  border-radius: 50%;
+  /* display: flex;
+  justify-content: right; */
+  border-style: solid;
+  box-shadow: 0.5em 0.5em rgba(0, 0, 0, 0.125);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   
 }
 
-#searchButton{
-  background-color: rgb(107, 197, 107);
-  margin-left:1%;
+#circleContainer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+  /* border-style: solid; */
+  /* display: inline-block; */
+  /* float: left/right */
+  /* position: absolute */
+  
 }
 
-#tableContainer{
-  width: 100vh;
+#rocket {
+  /* transform: scaleX(-1); */
+  box-shadow: black;
 }
 
-header{
-  background-color: yellow;
+#preview {
+  display: flex;
+  /* justify-content: start; */
+  border-style: solid;
+  height: 55vh;
+  width: 65vw;
+  padding-left: 0.5%;
+  margin-left: 1%;
+  background-color: lightgreen;
+}
+
+#explanation {
+  top: 50vh;
+  display: flex;
+  /* justify-content: start; */
+  /* border-style:groove; */
+  height: 40vh;
+  width: 55vw;
+  padding-left: 0.5%;
+  margin-left: 1%;
+  /* align-items: center; */
+  justify-content: center;
 }

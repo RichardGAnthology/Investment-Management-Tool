@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import InvestmentServices from "../services/InvestmentServices";
 
-export default class AppleSauce extends Component {
+export default class changeInvestments extends Component {
   constructor(props) {
     super(props);
 
@@ -40,8 +40,8 @@ export default class AppleSauce extends Component {
       purchase_date: this.state.purchase_date,
       account: this.state.account,
     };
-    InvestmentServices.postInvestment(currentInvestment);
     console.log(currentInvestment);
+    InvestmentServices.updateInvestment(currentInvestment, this.state.id);
   }
 
   handleStockChange(event) {
@@ -98,7 +98,7 @@ export default class AppleSauce extends Component {
           ></input>
         </form>
         <p>Edit Investments</p>
-        <button onClick={this.updateInvestment}>Add to Investments</button>
+        <button onClick={this.updateInvestment}>Update Investment</button>
       </div>
     );
   }
