@@ -8,7 +8,6 @@ export default function Nav() {
         <Link to="/home">
           <li>Home</li>
         </Link>
-
         <Link to="/listInvestments">
           <li>Your Stocks</li>
         </Link>

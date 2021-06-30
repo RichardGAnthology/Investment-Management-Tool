@@ -1,5 +1,6 @@
 /* <a href='https://www.freepik.com/free-photos-vectors/business'>Business vector created by catalyststuff - www.freepik.com</a> */
 /* <a href="https://www.freepik.com/free-photos-vectors/logo">Logo vector created by catalyststuff - www.freepik.com</a> */
+/* <a href='https://www.freepik.com/free-photos-vectors/people'>People vector created by catalyststuff - www.freepik.com</a> */
 .App {
   text-align: center;
 }
@@ -54,6 +55,13 @@
   margin-left: 1%;
 }
 
+#updateButton {
+  bottom: 20vh;
+  background-color: #4a83ff;
+  color: white;
+  margin-top: 5%;
+}
+
 #tableContainer {
   display: flex;
   justify-content: center;
@@ -94,6 +102,12 @@ header {
 
 body {
   background-color: #ffecdf;
+  overflow-x: hidden;
+  height: 100vh;
+}
+#holder {
+  min-height: 100%;
+  position: relative;
 }
 
 #titleContainer {
@@ -108,16 +122,46 @@ body {
   color: white;
   padding: 1%;
   margin-top: 5%;
+  /* left: 0px; */
+  bottom: 0px;
+  height: 30px;
+  width: 100%;
+  /* position: fixed; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+#fixedFooterContainer {
+  background-color: #234990;
+  color: white;
+  padding: 1%;
+  /* margin-top: 5%; */
+  position: fixed;
+  /* left: 0px; */
+  bottom: 0px;
+  height: 30px;
+  width: 100%;
+}
+
+/* #tableContainer {
+  margin-bottom: 100%;
+} */
 
 .Button {
   margin: 90%;
   padding: 90%;
 }
 
+#addButton {
+  margin-top: 2%;
+  background-color: #52aaff;
+  color: white;
+}
+
 #circle {
-  width: 400px;
-  height: 400px;
+  width: 350px;
+  height: 350px;
   background: #3c83b6;
   border-radius: 50%;
   /* display: flex;
@@ -127,18 +171,33 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  
+}
+
+#waveCircle {
+  width: 350px;
+  height: 350px;
+  background: #3c83b6;
+  border-radius: 50%;
+  /* display: flex;
+  justify-content: right; */
+  border-style: solid;
+  box-shadow: 0.5em 0.5em rgba(0, 0, 0, 0.125);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 70vw;
+  margin-top: 4vh;
 }
 
 #circleContainer {
   display: flex;
   justify-content: flex-end;
   padding: 20px;
+
   /* border-style: solid; */
   /* display: inline-block; */
   /* float: left/right */
   /* position: absolute */
-  
 }
 
 #rocket {
@@ -155,17 +214,95 @@ body {
   padding-left: 0.5%;
   margin-left: 1%;
   background-color: lightgreen;
+  justify-content: center;
+  /* margin-bottom: 2; */
+  border-radius: 30%;
+  align-items: center;
 }
 
 #explanation {
-  top: 50vh;
   display: flex;
   /* justify-content: start; */
   /* border-style:groove; */
-  height: 40vh;
+  /* height: -40vh; */
   width: 55vw;
   padding-left: 0.5%;
-  margin-left: 1%;
+  margin-left: 7%;
+  /* margin-top: 250vh; */
   /* align-items: center; */
   justify-content: center;
+}
+
+#formContainer {
+  margin-top: 5%;
+}
+/* makes the calender transparent */
+input[type="date"]:in-range::-webkit-datetime-edit-year-field,
+input[type="date"]:in-range::-webkit-datetime-edit-month-field,
+input[type="date"]:in-range::-webkit-datetime-edit-day-field,
+input[type="date"]:in-range::-webkit-datetime-edit-text {
+  color: transparent;
+}
+
+#listContainer {
+  height: 100vh;
+}
+
+#updateForm {
+  margin-top: 5%;
+}
+
+/* #circleContainer {
+  border-style: solid;
+  display: inline-block;
+  float: left/right;
+  position: absolute;
+} */
+
+#rocketCloudContainer {
+  display: flex;
+  width: 250px;
+  height: 250px;
+  background: #3c83b6;
+  border-radius: 50%;
+  border-style: solid;
+  box-shadow: 0.5em 0.5em rgba(0, 0, 0, 0.125);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2%;
+}
+
+#rocketCloud {
+  transform: scaleX(-1);
+}
+
+#editButton {
+  margin-right: 1%;
+}
+
+.aboutMe {
+  color: white;
+}
+
+#footerLinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: 22%; */
+}
+
+#aboutMeButton {
+  background-color: #ddd;
+  border: none;
+  color: #234990;
+  /* padding: 10px 20px; */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+  box-shadow: 5px 6px #42403a;
+  font-weight:900;
 }

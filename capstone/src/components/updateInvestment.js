@@ -1,5 +1,9 @@
 import React, { Component } from "react";
 import InvestmentServices from "../services/InvestmentServices";
+import { TextField } from "@material-ui/core";
+import { Button } from "@material-ui/core";
+import BorderColorIcon from "@material-ui/icons/BorderColor";
+import RocketCloud from "../images/Cloud-RG.png";
 
 export default class updateInvestment extends Component {
   constructor(props) {
@@ -63,42 +67,79 @@ export default class updateInvestment extends Component {
   render() {
     return (
       <div>
-        <form>
-          <input
+        <div id="titleContainer">
+          <h1 id="tableTitle">Update your investments here</h1>
+        </div>
+
+        <form id="updateForm">
+          <TextField
             type="text"
-            id="stock"
-            name="stock"
+            color="secondary"
+            variant="filled"
+            label="Stock to add"
             value={this.state.stock}
-            placeholder="Stock to add"
             onChange={this.handleStockChange}
-          ></input>
-          <input
+          />
+          <TextField
             type="number"
-            id="number_purchased"
-            name="number_purchased"
+            variant="filled"
+            label="Amount"
             value={this.state.number_purchased}
-            placeholder="amount"
             onChange={this.handlePurchaseChange}
-          ></input>
-          <input
+          />
+
+          <TextField
             type="date"
-            id="purchase_date"
-            name="purchase_date"
+            variant="filled"
+            label="purchase date"
+            // display = "none"
             value={this.state.purchase_date}
-            placeholder="date purchased"
             onChange={this.handleDateChange}
-          ></input>
-          <input
+          />
+          <TextField
             type="text"
-            id="account"
-            name="account"
+            variant="filled"
+            label="Account"
             value={this.state.account}
-            placeholder="Account"
             onChange={this.handleAccountChange}
-          ></input>
+          />
         </form>
-        <p>Edit Investments</p>
-        <button onClick={this.updateInvestment}>Update Investment</button>
+        <div id="rocketCloudContainer">
+          {" "}
+          <img id="rocketCloud" src={RocketCloud} width="250"></img>
+        </div>
+
+        {/* <p>Edit Investments</p> */}
+        <Button
+          onClick={this.updateInvestment}
+          className="Button"
+          id="updateButton"
+          variant="contained"
+          // color="secondary"
+          endIcon={<BorderColorIcon />}
+        >
+          Update Investment
+        </Button>
+        <div id="footerContainer">
+          <footer id="footerLinks">
+            {/* <p>About Me</p> */}
+            <Button
+              //what
+              // endIcon={<InfoIcon />}
+              id="aboutMeButton"
+              variant="contained"
+              // color="primary"
+              href="aboutMe"
+            >
+              About Me
+              
+            </Button>{" "}
+            {/* <a className="aboutMe" href="aboutMe">
+                About Me
+              </a> */}
+          </footer>
+          
+        </div>
       </div>
     );
   }

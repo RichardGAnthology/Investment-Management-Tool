@@ -13,7 +13,7 @@ class InvestmentServices {
   deleteInvestment(investmentId) {
     return axios.delete(del_api + "/" + investmentId);
   }
-                
+
   postInvestment(currentInvestment) {
     return axios.post(add_api, currentInvestment);
   }

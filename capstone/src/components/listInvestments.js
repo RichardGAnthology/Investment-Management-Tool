@@ -5,6 +5,8 @@ import EditIcon from "@material-ui/icons/Edit";
 import DeleteIcon from "@material-ui/icons/Delete";
 import Button from "@material-ui/core/Button";
 import SearchIcon from "@material-ui/icons/Search";
+import RocketSuit from "../images/RG-Suit.png";
+
 // import { createMuiTheme } from "@material-ui/core/styles";
 
 // const useStyles = makeStyles((theme) => ({
@@ -85,7 +87,7 @@ class listInvestments extends Component {
 
   render() {
     return (
-      <div>
+      <div id="listContainer">
         <div id="titleContainer">
           <h1 id="tableTitle">Your Investment Portfolio</h1>
         </div>
@@ -93,7 +95,7 @@ class listInvestments extends Component {
           {/* <button id="addStock" onClick={this.addStock}>
           {" "}
           Add Stock
-        </button> */}
+          </button> */}
           <table id="table">
             <thead>
               <tr>
@@ -101,6 +103,8 @@ class listInvestments extends Component {
                 <th>Quantity Owned</th>
                 <th>Date Purchased</th>
                 <th>Account</th>
+                {/* <th>Make Changes</th>
+                <th>Research</th> */}
               </tr>
             </thead>
             <tbody>
@@ -122,10 +126,11 @@ class listInvestments extends Component {
                         id="editButton"
                         variant="contained"
                         color="primary"
-                        startIcon={<EditIcon />}
+                        endIcon={<EditIcon />}
                       >
                         Update
                       </Button>
+
                       {/* <EditIcon fontSize="small" color="primary" /> */}
                       <Button
                         className="Button"
@@ -133,17 +138,18 @@ class listInvestments extends Component {
                         id="deleteButton"
                         variant="contained"
                         color="secondary"
-                        startIcon={<DeleteIcon />}
+                        endIcon={<DeleteIcon />}
                       >
                         Delete
                       </Button>
+
                       <Button
                         className="Button"
                         onClick={() => this.SearchNews(investment.stock)}
                         id="searchButton"
                         variant="contained"
                         color="secondary"
-                        startIcon={<SearchIcon />}
+                        endIcon={<SearchIcon />}
                       >
                         Search News
                       </Button>
@@ -162,9 +168,32 @@ class listInvestments extends Component {
               ))}
             </tbody>
           </table>
+          <div id="suitCircleContainer">
+            <div id="suitCircle">
+              {" "}
+              <img id="rocketSuit" src={RocketSuit} width="200px"></img>
+            </div>
+          </div>
         </div>
         <div id="footerContainer">
-          <footer>About me</footer>
+          <footer id="footerLinks">
+            {/* <p>About Me</p> */}
+            <Button
+              //what
+              // endIcon={<InfoIcon />}
+              id="aboutMeButton"
+              variant="contained"
+              // color="primary"
+              href="aboutMe"
+            >
+              About Me
+              
+            </Button>{" "}
+            {/* <a className="aboutMe" href="aboutMe">
+                About Me
+              </a> */}
+          </footer>
+          
         </div>
       </div>
     );
