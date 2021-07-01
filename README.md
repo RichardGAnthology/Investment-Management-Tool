@@ -1,4 +1,5 @@
-# Hello everyone. Welcome to my capstone project - an Investment Management Tool.
+# Hello everyone. Welcome to my capstone project! 
+# An Investment Management Tool.
 
 ## Purpose of this project:
 This project is a simple one - it's simply meant to help investors keep track of their investments, in a clean and orderly fashion. The program will allow the user to add, delete, update, and view their investments. It also allows them to search news about the company with the search of one button. 
