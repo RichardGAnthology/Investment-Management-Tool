@@ -1,6 +1,7 @@
 /* <a href='https://www.freepik.com/free-photos-vectors/business'>Business vector created by catalyststuff - www.freepik.com</a> */
 /* <a href="https://www.freepik.com/free-photos-vectors/logo">Logo vector created by catalyststuff - www.freepik.com</a> */
 /* <a href='https://www.freepik.com/free-photos-vectors/people'>People vector created by catalyststuff - www.freepik.com</a> */
+/* <a href='https://www.freepik.com/free-photos-vectors/school'>School vector created by catalyststuff - www.freepik.com</a> */
 .App {
   text-align: center;
 }
@@ -46,8 +47,10 @@
 
 #buttons {
   display: flex;
-  justify-content: space-around;
-  align-content: space-around;
+  /* justify-content: space-around; */
+  /* align-content: space-around; */
+  margin-left: 3%;
+  /* width: 110%; */
 }
 
 #searchButton {
@@ -69,7 +72,7 @@
 }
 
 #table {
-  width: 100vh;
+  width: 65vw;
   padding: 1%;
 }
 
@@ -212,11 +215,11 @@ body {
   height: 55vh;
   width: 65vw;
   padding-left: 0.5%;
-  margin-left: 1%;
+  margin-left: 3%;
   background-color: lightgreen;
   justify-content: center;
   /* margin-bottom: 2; */
-  border-radius: 30%;
+  border-radius: 30px 30px 30px 30px;
   align-items: center;
 }
 
@@ -304,5 +307,48 @@ input[type="date"]:in-range::-webkit-datetime-edit-text {
   cursor: pointer;
   border-radius: 16px;
   box-shadow: 5px 6px #42403a;
-  font-weight:900;
+  font-weight: 900;
+}
+
+#navButtons {
+  background-color: #ddd;
+  border: none;
+
+  /* padding: 10px 20px; */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+  box-shadow: 5px 6px #42403a;
+  font-weight: 900;
+}
+
+li {
+  color: #234990;
+}
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+#aboutMeLinkButton {
+  background-color: #ddd;
+  border: none;
+  color: #234990;
+  /* padding: 10px 20px; */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+  box-shadow: 5px 6px #42403a;
+  font-weight: 900;
+  justify-content: center;
+  align-items: center;
 }

@@ -5,7 +5,7 @@ import EditIcon from "@material-ui/icons/Edit";
 import DeleteIcon from "@material-ui/icons/Delete";
 import Button from "@material-ui/core/Button";
 import SearchIcon from "@material-ui/icons/Search";
-import RocketSuit from "../images/RG-Suit.png";
+import Pencil from "../images/RG-Pencil.png";
 
 // import { createMuiTheme } from "@material-ui/core/styles";
 
@@ -48,12 +48,20 @@ class listInvestments extends Component {
     this.plusOne = this.plusOne.bind(this);
   }
 
-  SearchNews() {
-    console.log("news");
+  SearchNews(stock) {
+    console.log(stock);
+    // History.push("https://finance.yahoo.com/quote/AMZN?p=AMZN&.tsrc=fin-srch");
+    // location.assign(
+    //   "https://finance.yahoo.com/quote/AMZN?p=AMZN&.tsrc=fin-srch"
+    // );
+    window.location.assign(
+      "https://news.google.com/search?q="+stock+"&hl=en-US&gl=US&ceid=US%3Aen"
+    );
+    // <a href="google.com"></a>;
   }
 
   deleteInvestment(id) {
-    InvestmentServices.deleteInvestment(id).then((res) => {
+    InvestmentServices.deleteInvestment(id).then(() => {
       this.setState({
         investments: this.state.investments.filter(
           (investment) => investment.id !== id
@@ -100,7 +108,7 @@ class listInvestments extends Component {
             <thead>
               <tr>
                 <th>Stock</th>
-                <th>Quantity Owned</th>
+                <th>Shares</th>
                 <th>Date Purchased</th>
                 <th>Account</th>
                 {/* <th>Make Changes</th>
@@ -171,11 +179,11 @@ class listInvestments extends Component {
           <div id="suitCircleContainer">
             <div id="suitCircle">
               {" "}
-              <img id="rocketSuit" src={RocketSuit} width="200px"></img>
+              <img id="rocketSuit" src={Pencil} width="250px"></img>
             </div>
           </div>
         </div>
-        <div id="footerContainer">
+        <div id="fixedFooterContainer">
           <footer id="footerLinks">
             {/* <p>About Me</p> */}
             <Button
@@ -187,13 +195,11 @@ class listInvestments extends Component {
               href="aboutMe"
             >
               About Me
-              
             </Button>{" "}
             {/* <a className="aboutMe" href="aboutMe">
                 About Me
               </a> */}
           </footer>
-          
         </div>
       </div>
     );

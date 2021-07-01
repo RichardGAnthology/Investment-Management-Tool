@@ -13,11 +13,10 @@ export default class Home extends Component {
           <h1 id="para1">Welcome one, and welcome all!</h1>
           <h2 id="para2">
             This is a program made specifically to help facilitate your
-            investments
+            investments!
           </h2>
           <h3 id="para3">
-            readme file clearly documents the purpose of the project as a
-            problem statement, and the target end user for this program
+            
           </h3>
         </header>
         <div id="waveCircle">
@@ -33,7 +32,7 @@ export default class Home extends Component {
         </div>
         <div id="preview">
           {" "}
-          <img id="screenshot" src={Screenshot} height="80%"></img>
+          <img id="screenshot" src={Screenshot} height="55%" ></img>
           {/* <h3>Preview</h3>{" "} */}
         </div>
         <div id="footerContainer">

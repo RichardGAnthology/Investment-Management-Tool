@@ -129,7 +129,7 @@ export default class updateInvestment extends Component {
               id="aboutMeButton"
               variant="contained"
               // color="primary"
-              href="aboutMe"
+              href="http://localhost:3000/aboutMe"
             >
               About Me
               
