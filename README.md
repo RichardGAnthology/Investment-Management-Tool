@@ -35,9 +35,10 @@ A README.md file with explanations of the technologies used, the approach taken,
 Project must be approved by Instructor approval at the start of project week
 readme file clearly documents the purpose of the project as a problem statement, and the target end user for this program -->
 
-![alternativetext](ReadMeImages/screenshotTest.png "test")
-![Alt Text](ReadMeImages/screenshotTest.png "test")
-<img width="1439" alt="testing" src="file:///Users/richardgonzalez/Desktop/Screen%20Shot%202021-07-01%20at%2012.34.35%20AM.png">
+<img width="1439" alt="testing" src="https://imgbox.com/ljyHWSvm">
+
+<!-- ![alternativetext](ReadMeImages/screenshotTest.png "test")
+![Alt Text](ReadMeImages/screenshotTest.png "test") -->
 
 <!-- ** test **  -->
 
