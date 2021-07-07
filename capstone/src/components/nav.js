@@ -21,6 +21,12 @@ export default function Nav() {
             <li>Add investments</li>
           </Link>
         </Button>
+
+        <Button id="navButtons" variant="contained">
+          <Link to="/PortfolioValue">
+            <li>Portfolio Value</li>
+          </Link>
+        </Button>
       </div>
     </div>
   );

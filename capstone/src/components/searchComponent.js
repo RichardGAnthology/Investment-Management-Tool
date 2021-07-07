@@ -1,15 +1,15 @@
-import React, { Component } from "react";
+// import React, { Component } from "react";
 
-export default class searchComponent extends Component {
-  constructor(props) {
-    super(props);
+// export default class searchComponent extends Component {
+//   constructor(props) {
+//     super(props);
 
-    this.state = { news: [] };
-  }
+//     this.state = { news: [] };
+//   }
 
   
 
-  render() {
-    return <div></div>;
-  }
-}
+//   render() {
+//     return <div></div>;
+//   }
+// }

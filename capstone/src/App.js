@@ -4,11 +4,9 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./components/home";
 import Nav from "./components/nav";
 import addstock from "./components/addstock";
-// import updateInvestmentsComp from "./components/updateInvestmentsComp";
-// import AppleSauce from "./components/AppleSauce";
 import UpdateInvestment from "./components/updateInvestment";
-import ChangeInvestments from "./components/changeInvestments";
 import AboutMe from "./components/aboutMe";
+import PortfolioValue from "./components/PortfolioValue";
 
 function App() {
   return (
@@ -27,6 +25,7 @@ function App() {
           /> */}
           {/* <Route path="/AppleSauce/:id" component={AppleSauce} /> */}
           <Route path="/updateInvestment/:id" component={UpdateInvestment} />
+          <Route path="/PortfolioValue" component={PortfolioValue} />
           <Route path="/aboutMe" component={AboutMe} />
         </Switch>
       </Router>
