@@ -35,12 +35,13 @@ A README.md file with explanations of the technologies used, the approach taken,
 Project must be approved by Instructor approval at the start of project week
 readme file clearly documents the purpose of the project as a problem statement, and the target end user for this program -->
 
-<a href="https://imgur.com/FhMq2qE" target="_blank">
-<img src="https://imgur.com/FhMq2qE" alt="image host"/></a>
+<!-- <a href="https://imgur.com/FhMq2qE" target="_blank"> -->
 
-<img src="https://imgur.com/FhMq2qE" alt="image host"/>
+<img src="https://i.imgur.com/FhMq2qE.png" alt="image host"/></a>
 
-<img width="1439" alt="testing" src="https://imgur.com/FhMq2qE">
+<!-- <img src="https://imgur.com/FhMq2qE" alt="image host"/> -->
+
+<!-- <img width="1439" alt="testing" src="https://imgur.com/FhMq2qE"> -->
 
 <!-- ![alternativetext](ReadMeImages/screenshotTest.png "test")
 ![Alt Text](ReadMeImages/screenshotTest.png "test") -->
