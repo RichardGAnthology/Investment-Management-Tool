@@ -35,22 +35,24 @@ A README.md file with explanations of the technologies used, the approach taken,
 Project must be approved by Instructor approval at the start of project week
 readme file clearly documents the purpose of the project as a problem statement, and the target end user for this program -->
 
-<!-- <a href="https://imgur.com/FhMq2qE" target="_blank"> -->
+### Below you will see different screenshots of the tool.
 
-<img src="https://i.imgur.com/FhMq2qE.png" alt="image host"/></a>
+#### The Home Page
 
-<!-- <img src="https://imgur.com/FhMq2qE" alt="image host"/> -->
+<img src="https://i.imgur.com/SVj6dK0.png" alt="image host"/>
 
-<!-- <img width="1439" alt="testing" src="https://imgur.com/FhMq2qE"> -->
+#### The Your Stocks Page
 
-<!-- ![alternativetext](ReadMeImages/screenshotTest.png "test")
-![Alt Text](ReadMeImages/screenshotTest.png "test") -->
+<img src="https://i.imgur.com/QtN5kQC.png" alt="image host"/>
 
-<!-- ** test **  -->
+#### The Add Investments Page
 
-<!-- file:///Users/richardgonzalez/Desktop/Screen%20Shot%202021-07-01%20at%2012.34.35%20AM.png -->
+<img src="https://i.imgur.com/NmXiznO.png" alt="image host"/>
 
-<!-- <img src="ReadMeImages/screenshotTest.png"> </img>
-<img src="../ReadMeImages/screenshotTest.png"> </img>
-<img src= "ReadMeImages/screenshotTest.png">
-<img src = "../ReadMeImages/screenshotTest.png"> -->
+#### The Update Investments Page
+
+<img src="https://i.imgur.com/0lhYuue.png" alt="image host"/>
+
+#### The About Me Page
+
+<img src="https://i.imgur.com/rwvIcrU.png" alt="image host"/>

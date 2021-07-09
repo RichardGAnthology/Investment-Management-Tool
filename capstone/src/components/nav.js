@@ -22,11 +22,11 @@ export default function Nav() {
           </Link>
         </Button>
 
-        <Button id="navButtons" variant="contained">
+        {/* <Button id="navButtons" variant="contained">
           <Link to="/PortfolioValue">
             <li>Portfolio Value</li>
           </Link>
-        </Button>
+        </Button> */}
       </div>
     </div>
   );
