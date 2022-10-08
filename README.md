@@ -1,4 +1,4 @@
-# Hello everyone. Welcome to my capstone project!
+# Hello everyone. Welcome to my project!
 
 # An Investment Management Tool.
 
