@@ -1,8 +1,8 @@
-# Hello everyone. Welcome to my project!
+# Hello everyone, and welcome!
 
 # An Investment Management Tool.
 
-## Purpose of this project:
+## Purpose:
 
 This project is a simple one - it's simply meant to help investors keep track of their investments, in a clean and orderly fashion. The program will allow the user to add, delete, update, and view their investments. It also allows them to search news about the company with the press of one button.
 
@@ -10,16 +10,14 @@ This project is a simple one - it's simply meant to help investors keep track of
 
 The target audience is anyone that holds or plans to hold investments and is worried about keeping track of them or monitoring them.
 
-## In order for this project to be successful I was tasked with -
+### Project Specifications
 
-### Project Details
-
-- Make a responsive Spring Boot application based on MVC architecture (Model, View, Controller).
-- The application should implement all CRUD operations, utilizing Entities, Controller classes, and Interfaces.
-- The application should establish a connection with your React project as a View layer that includes Components for CRUD operations.
-- For a responsive app, install Bootstrap, or use Media Queries, or any other responsive plugins of your choice.
-- Access your RESTful API from your React project using axios (http library) and display in a formatted view (CSS).
-- Add Router functionality in your React project.
+- Spring Boot with MVC architecture.
+- Implements CRUD operations.
+- Connects with React project as View layer.
+- A responsive app.
+- Accesss RESTful API from React project.
+- Use Router functionality in React project.
 
 ### Backend Requirements
 
@@ -28,12 +26,10 @@ The target audience is anyone that holds or plans to hold investments and is wor
 - Uses MVC architecture.
 - Uses Apache Tomcat as a web server.
 
-<!-- ### Github Requirements
-
-Commits to GitHub every day
-A README.md file with explanations of the technologies used, the approach taken, a link to your live site, installation instructions, unsolved problems, etc.
-Project must be approved by Instructor approval at the start of project week
-readme file clearly documents the purpose of the project as a problem statement, and the target end user for this program -->
+### Implementation Details and Tradeoffs
+1. The decision to use Springboot was one based on familiarity of the framework and time constraints.
+2. The decision to use React was to make use of it's component modularity and state management.
+3. The decision to use Axios was one based on backward compability and wide browser support.
 
 ### Below you will see different screenshots of the tool.
 
